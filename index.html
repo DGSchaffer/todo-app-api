@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header><img src="https://images.pexels.com/photos/3299/postit-scrabble-to-do.jpg" alt="todo app">
+
+</header>
+
+<body>
+    <h1>App mit API</h1>
+    <main>
+        <div class="container">
+            <input type="text" name="todo" id="new-todo">
+            <button id="new-todo-btn" type="submit">Add Todo</button>
+            <br>
+            <div id="yourtodos" class="hidden"> Your Todos:</div>
+
+            <ul id="list">
+
+            </ul>
+            <ul>
+                <li class="hidden" id="check"><input type="checkbox" name="checkall" id="universal-check"><br><label
+                        for="checkall"><i>select all</i></label></li>
+            </ul>
+            <br>
+            <div class="filter"> Filter & Options:</div>
+            <span class="filterspan"><input type="radio" id="all" name="radio" value="all" checked><label
+                    for="all">All</label></span>
+            <span class="filterspan"><input type="radio" id="open" name="radio" value="open"><label
+                    for="open">Open</label></span>
+            <span class="filterspan"><input type="radio" id="done" name="radio" value="done"><label
+                    for="done">Done</label></span>
+            <br><button id="removedone" type="submit">Remove Done Todos</button><br><br>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
